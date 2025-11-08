@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6ff892a023.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="design.css" />
+    <link rel="stylesheet" href="cs.css" />
+    <title>moji</title>
+    <link rel="icon" type="image/png" href="images/logo/logo.png" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="navigination">
+          <a href="#">HỆ THỐNG CỬA HÀNG</a> <a href="#">VỀ MOJI</a>
+          <a href="#">TUYỂN DỤNG</a>
+        </div>
+        <div class="center">
+          <div class="thang">
+            <div class="logo">
+              <a href="sanpham.html">
+                <img src="images/logo/logo.png" alt="Logo" />
+              </a>
+            </div>
+
+            <div class="header-controls">
+              <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="text"
+                  id="searchInput"
+                  onkeyup="filterProducts()"
+                  placeholder="Nhập tên sản phẩm cần tìm..."
+                />
+              </div>
+
+              <div class="nav">
+                <button><a href="../login.html">Đăng nhập</a></button>
+
+                <button><a href="../register.html">Đăng ký</a></button>
+
+                <button>
+                  <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav-menu">
+          <div class="nav-menus">
+            <a href="#">TẤT CẢ</a>
+            <a href="#">Quà tặng</a>
+            <a href="#">Giáng sinh</a>
+            <a href="#">Gấu bông</a>
+            <a href="#">Balo Túi Ví</a>
+            <a href="#">Văn phòng phẩm</a>
+            <a href="#">Điện tử</a>
+            <a href="#">Gia dụng</a>
+            <a href="#">Trang điểm</a>
+            <a href="#">Đồ chơi</a>
+            <a href="#">Trang trí</a>
+          </div>
+        </nav>
+      </header>
+
+      <aside>
+        <div class="inner-wrap">
+          <img class="photo show" src="images/logo/background.png" alt="h1" />
+          <img class="photo" src="images/logo/QC1.jpg" alt="qc1" />
+          <img class="photo" src="images/logo/QC2.png" alt="qc2" />
+        </div>
+      </aside>
+
+      <main class="main">
+        <div class="tieude">
+          <h1>Sản phẩm mới</h1>
+        </div>
+
+        <section class="product">
+          <div class="container">
+            <div class="product-items">
+              <div class="product-item">
+                <div class="product-item-text">
+                  <img src="images/sanpham/CanhCutVatVa.jpg" alt="" />
+                  <h1>IP 6</h1>
+                  <p><span>600.000</span><sup>đ</sup></p>
+                </div>
+                <button>Thêm Vào giỏ hàng</button>
+              </div>
+
+              <div class="product-item">
+                <div class="product-item-text">
+                  <img src="images/sanpham/CaoLuuManh.jpeg" alt="" />
+                  <h1>IP 26</h1>
+                  <p><span>7.600.000</span><sup>đ</sup></p>
+                </div>
+                <button>Thêm Vào giỏ hàng</button>
+              </div>
+
+              <div class="product-item">
+                <div class="product-item-text">
+                  <img src="images/sanpham/Capypara.jpeg" alt="" />
+                  <h1>IP 36</h1>
+                  <p><span>1.600.000</span><sup>đ</sup></p>
+                </div>
+                <button>Thêm Vào giỏ hàng</button>
+              </div>
+
+              <div class="product-item">
+                <div class="product-item-text">
+                  <img src="images/sanpham/ChauHoaSen.jpeg" alt="" />
+                  <h1>IP 16</h1>
+                  <p><span>3.600.000</span><sup>đ</sup></p>
+                </div>
+                <button>Thêm Vào giỏ hàng</button>
+              </div>
+
+              <div class="product-item">
+                <div class="product-item-text">
+                  <img src="images/sanpham/Chihuahua.jpeg" alt="" />
+                  <h1>IP 12</h1>
+                  <p><span>5.600.000</span><sup>đ</sup></p>
+                </div>
+                <button>Thêm Vào giỏ hàng</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- cart giỏ hàng -->
+
+        <section class="cart">
+          <i class="fa-solid fa-circle-xmark"></i>
+          <h2>Giỏ Hàng</h2>
+          <form action="">
+            <table>
+              <thead>
+                <tr>
+                  <th>sản phẩm</th>
+                  <th>giá</th>
+                  <th>sl</th>
+                  <th>chọn</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div style="text-align: right" class="price-total">
+              <p style="font-weight: bold">
+                Tổng tiền:<span>0</span><sup>đ</sup>
+              </p>
+            </div>
+            <button>MUA</button>
+          </form>
+        </section>
+
+        <h1>về chúng tôi</h1>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <div class="grid-container">
+            <div class="lienhe">
+              <h4>Hotline</h4>
+              <p><i class="fas fa-phone-square"></i>&ensp;0123456789</p>
+              <a href=""><i class="fa fa-envelope"></i>&ensp;moji@gmail.com</a>
+            </div>
+            <div class="diachi">
+              <h4>Cần Thơ</h4>
+              <ul>
+                <li>Đường Mạc Thiên Tích</li>
+                <li>Đường 30/4</li>
+                <li>Đường 3/2</li>
+              </ul>
+            </div>
+            <div class="">
+              <h4>Moji</h4>
+              <p>Hãy kết nối với chúng mình</p>
+              <div class="social">
+                <a href=""
+                  ><img
+                    src="../images/social/social-color-youtube.png"
+                    alt="" /></a>
+                <a href=""
+                  ><img src="../images/social/fb-logo.png" alt=""
+                /></a>
+                <a href=""
+                  ><img src="../images/social/tiktok.png" alt=""
+                /></a>
+                <a href=""><img src="../images/social/social-color-insta.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="images/logo/logo.png" />
+  </head>
+  <body>
+          <header>
+        <div class="navigination">
+          <a href="#">HỆ THỐNG CỬA HÀNG</a> <a href="#">VỀ MOJI</a>
+          <a href="#">TUYỂN DỤNG</a>
+        </div>
+        <div class="center">
+          <div class="thang">
+            <div class="logo">
+              <a href="sanpham.html">
+                <img src="images/logo/logo.png" alt="Logo" />
+              </a>
+            </div>
+
+            <div class="header-controls">
+              <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="text"
+                  id="searchInput"
+                  onkeyup="filterProducts()"
+                  placeholder="Nhập tên sản phẩm cần tìm..."
+                />
+              </div>
+
+              <div class="nav">
+                <button><a href="../login.html">Đăng nhập</a></button>
+
+                <button><a href="../register.html">Đăng ký</a></button>
+
+                <button>
+                  <a href="#"></a><i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav-menu">
+          <div class="nav-menus">
+            <a href="#">TẤT CẢ</a>
+            <a href="#">Quà tặng</a>
+            <a href="#">Giáng sinh</a>
+            <a href="#">Gấu bông</a>
+            <a href="#">Balo Túi Ví</a>
+            <a href="#">Văn phòng phẩm</a>
+            <a href="#">Điện tử</a>
+            <a href="#">Gia dụng</a>
+            <a href="#">Trang điểm</a>
+            <a href="#">Đồ chơi</a>
+            <a href="#">Trang trí</a>
+          </div>
+        </nav>
+      </header>
+    <main>
+      <div class="content">
+        <form class="glass-card" action="/login" method="post">
+          <h1>Welcome</h1>
+          <p>Please login to your acconut</p>
+
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your username"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button type="submit">Login</button>
+          <div class="footer">
+            <p>Dont have an account?<a href="register.html">Register</a></p>
+            <p>Hoặc Đăng Nhập Với</p>
+          </div>
+          <div class="dnfacebook">
+            <a href=""><i class="fa-brands fa-facebook"></i>Đăng Nhập Bằng Facebook</a>
+          </div>
+             <div class="dngoogle">
+            <a href=""><i class="fa-brands fa-google" aria-hidden="true"></i> Đăng Nhập Bằng Google</a>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div >
+        <div class="grid-container">
+          <div class="lienhe">
+            <h4>Hotline</h4>
+            <p><i class="fas fa-phone-square"></i>&ensp;0123456789</p>
+            <a href=""><i class="fa fa-envelope"></i>&ensp;moji@gmail.com</a>
+          </div>
+          <div class="diachi">
+            <h4>Cần Thơ</h4>
+            <ul>
+              <li>Đường Mạc Thiên Tích</li>
+              <li> Đường 30/4</li>
+              <li>Đường 3/2</li>
+            </ul>
+          </div>
+          <div class="">
+            <h4>Moji</h4>
+            <p>Hãy kết nối với chúng mình</p>
+            <div class="social">
+              <a href=""><img src="./images/social/social-color-youtube.png" alt=""></a>
+              <a href=""><img src="./images/social/fb-logo.png" alt=""></a>
+              <a href=""><img src="./images/social/tiktok.png" alt=""></a>
+              <a href=""><img src="./images/social/social-color-insta.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
